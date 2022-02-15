@@ -4,7 +4,7 @@ import styles from './Welcome.styles';
 
 const Welcome = () => (
   <div css={styles}>
-    <p className="welcome">WELCOME</p>
+    <p className="welcome">Добро пожаловать</p>
   </div>
 );
 
