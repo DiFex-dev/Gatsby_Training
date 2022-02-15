@@ -7,11 +7,14 @@ import styles from './HomePageTemplate.styles';
 
 const HomePageTemplate = ({ pageContext: { PageData } }) => {
   const [showModal, setShowModal] = useState(true);
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setShowModal(false), 3000);
   }, []);
-
+  useEffect(() => {
+    setShowContent(!showModal);
+  }, [showModal]);
   return (
     <Layout title={PageData.seo.title} description={PageData.seo.description} image={PageData.seo.image}>
       <div css={styles}>
@@ -21,6 +24,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <Welcome />
             </div>
           )}
+          <div className={`container-todo ${showContent ? 'active' : ''}`}></div>
         </Wrapper>
       </div>
     </Layout>
