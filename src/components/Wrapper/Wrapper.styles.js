@@ -4,8 +4,6 @@ import { breakpoints } from '../../styles';
 
 const styles = ({ maxWidth, width, mobileMaxWidth, mobileWidth }) => css`
   .wrapper {
-    display: flex;
-    justify-content: center;
     width: 100%;
   }
 

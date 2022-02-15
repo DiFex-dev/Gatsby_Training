@@ -21,6 +21,7 @@ const HomePageTemplate = ({ pageContext: { PageData } }) => {
               <Welcome />
             </div>
           )}
+          <div className={`container-todo ${!showModal ? 'active' : ''}`}></div>
         </Wrapper>
       </div>
     </Layout>
