@@ -1,8 +1,12 @@
 import { css } from '@emotion/react';
 
 const styles = css`
-  .template-container {
-    position: relative;
+  .welcomeScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
   }
 `;
 
